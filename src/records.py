@@ -4,7 +4,7 @@ from pathlib import Path
 
 REQUIRED_FIELDS = ("record_id", "period", "status")
 
-def read_records(path: str | Path) -> list[dict]:
+def read_records(path):
     data = json.loads(Path(path).read_text(encoding="utf-8"))
     if not isinstance(data, dict) or not isinstance(data.get("records"), list):
         raise ValueError("数据文件必须包含 records 数组")
