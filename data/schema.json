@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "fields": [
+    "record_id",
+    "period",
+    "status"
+  ],
+  "notes": "字段说明使用合成示例，状态值不代表分析结论。"
+}
